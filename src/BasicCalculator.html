@@ -1,0 +1,107 @@
+<head>
+    <style>
+        #btnNmrc,
+        #btnSmbl,
+        #btnOutr {
+            /*border: 1px solid lightslategray;*/
+            width: 30pt;
+            box-shadow: 0px 0px 5px cyan;
+        }
+
+        #btnOutrSign {
+            border: 1px solid teal;
+            width: 100pt;
+        }
+    </style>
+</head>
+<br />
+<div>
+    <center>
+        <form name="bscClcJs">
+            <table style="box-shadow: 0px 0px 10px #003220; padding: 10px;">
+                <tr>
+                    <td colspan="5" align="center" style="padding-bottom: 5px;">
+                        <input type="text" name="bscClcRslt" size=35 maxlength=35>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input id="btnNmrc" type="button" value=" 7 " onClick="Adddigit(7)">
+                    </td>
+                    <td align="center">
+                        <input id="btnNmrc" type="button" value=" 8 " onClick="Adddigit(8)">
+                    </td>
+                    <td align="center">
+                        <input id="btnNmrc" type="button" value=" 9 " onClick="Adddigit(9)">
+                    </td>
+                    <td align="center">
+                        <input id="btnSmbl" type="button" value=" / " onClick="Divide(bscClcJs)">
+                    </td>
+                    <td align="center">
+                        <input id="btnOutr" type="button" value="Sqrt" onClick="Squareroot(bscClcJs)">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input id="btnNmrc" type="button" value=" 4 " onClick="Adddigit(4)">
+                    </td>
+                    <td align="center">
+                        <input id="btnNmrc" type="button" value=" 5 " onClick="Adddigit(5)">
+                    </td>
+                    <td align="center">
+                        <input id="btnNmrc" type="button" value=" 6 " onClick="Adddigit(6)">
+                    </td>
+                    <td align="center">
+                        <input id="btnSmbl" type="button" value=" * " onClick="Multiply(bscClcJs)">
+                    </td>
+                    <td align="center">
+                        <input id="btnOutr" type="button" value=" % " onClick="Percent(bscClcJs)">
+                    </td> 
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input id="btnNmrc" type="button" value=" 1 " onClick="Adddigit(1)">
+                    </td>
+                    <td align="center">
+                        <input id="btnNmrc" type="button" value=" 2 " onClick="Adddigit(2)">
+                    </td>
+                    <td align="center">
+                        <input id="btnNmrc" type="button" value=" 3 " onClick="Adddigit(3)">
+                    </td>
+                    <td align="center">
+                        <input id="btnSmbl" type="button" value=" - " onClick="Subtract(bscClcJs)">
+                    </td>
+                    <td align="center">
+                        <input id="btnOutr" type="button" value=" 1/x " onClick="Invert(bscClcJs)">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input id="btnNmrc" type="button" value=" 0 " onClick="Adddigit(0)">
+                    </td>
+                    <td align="center">
+                        <input id="btnNmrc" type="button" value="+/-" onClick="ChngeSign(bscClcJs)">
+                    </td>
+                    <td align="center">
+                        <input id="btnNmrc" type="button" value=" . " onClick="SetDeciPnt()">
+                    </td>
+                    <td align="center">
+                        <input id="btnSmbl" type="button" value=" + " onClick="Add(bscClcJs)">
+                    </td>
+                    <td align="center">
+                        <input id="btnOutr" type="button" value=" = " onClick="Equals(bscClcJs)">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input id="btnOutr" type="button" value="ON" onClick="Initialize(bscClcJs)">
+                    </td>
+                    <td colspan="3" rowspan="3" align="center"><input id="btnOutrSign" type="button" value="Virtual Species"></td>
+                    <td align="center">
+                        <input id="btnOutr" type="button" value="CE" onClick="ClearEntry(bscClcJs)">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</div>
